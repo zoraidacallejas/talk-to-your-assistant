@@ -24,7 +24,7 @@ public class NetworkClient {
             Log.i(TAG, "in Spec custId="+custId);
             String spec =
                     String.format("%s?botid=%s%s&input=%s&format=json",
-                            "http://" + baseUrl + "/pandora/talk-xml",
+                            "https://" + baseUrl + "/pandora/talk-xml",
                             botId,
                             custId == null ? "" : "&custid=" + custId,
                             URLEncoder.encode(input));
