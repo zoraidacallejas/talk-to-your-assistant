@@ -464,7 +464,7 @@ public abstract class VoiceActivity extends Activity implements RecognitionListe
 		setLocale(languageCode);
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, id.toString());
-		myTTS.speak(text, TextToSpeech.QUEUE_FLUSH, params); 		
+		myTTS.speak(text, TextToSpeech.QUEUE_ADD, params); 		
 	}
 	
 	/**
